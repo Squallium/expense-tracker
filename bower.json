@@ -1,0 +1,22 @@
+{
+  "name": "expense-tracker",
+  "version": "0.0.2",
+  "homepage": "https://github.com/Squallium/expense-tracker",
+  "authors": [
+    "Squallium <squallium3@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
