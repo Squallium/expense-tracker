@@ -47,8 +47,12 @@ passport.deserializeUser(Account.deserializeUser());
 // set the 'dbUrl' to the mongodb url that correspond to the environment we are in
 app.set('dbUrl', config.db[app.settings.env]);
 // moongose
-mongoose.connect(app.get('dbUrl'));
-
+//mongoose.connect(app.get('dbUrl'));
+var MongoDB = mongoose.connect(app.get('dbUrl')).connection;
+MongoDB.on('error', function(err) { console.log(err.message); });
+MongoDB.once('open', function() {
+    console.log("mongodb connection open");
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
