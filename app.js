@@ -8,6 +8,8 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
+var config = require('./config');
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
@@ -42,8 +44,10 @@ passport.use(new LocalStrategy(Account.authenticate()));
 passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
+// set the 'dbUrl' to the mongodb url that correspond to the environment we are in
+app.set('dbUrl', config.db[app.settings.env]);
 // moongose
-mongoose.connect('mongodb://localhost/passport_local_mongoose_express_4');
+mongoose.connect(app.get('dbUrl'));
 
 
 // catch 404 and forward to error handler
