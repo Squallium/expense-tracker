@@ -1,6 +1,6 @@
 var should = require('should');
 var mongoose = require('mongoose');
-var Account = require("../models/account.js");
+var Account = require("../models/user.js");
 var config = require("../config");
 var db;
 
@@ -9,6 +9,11 @@ describe('Account', function() {
     before(function(done) {
         db = mongoose.connect(config.db['test']);
             done();
+    });
+
+    after(function(done) {
+        mongoose.connection.close();
+        done();
     });
 
     beforeEach(function(done) {
