@@ -125,6 +125,9 @@
         <item url="file://$USER_HOME$/.meteor/packages/promise/0.10.2/web.browser/server.js" />
         <item url="file://$USER_HOME$/.meteor/packages/random/1.1.0/web.browser/random.js" />
         <item url="file://$USER_HOME$/.meteor/packages/random/1.1.0/web.browser/random_tests.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/reactive-dict/1.2.0/web.browser/migration.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/reactive-dict/1.2.0/web.browser/reactive-dict-tests.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/reactive-dict/1.2.0/web.browser/reactive-dict.js" />
         <item url="file://$USER_HOME$/.meteor/packages/reactive-var/1.0.11/web.browser/reactive-var.js" />
         <item url="file://$USER_HOME$/.meteor/packages/reload/1.2.0/web.browser/reload.js" />
         <item url="file://$USER_HOME$/.meteor/packages/reload/1.2.0/web.browser/reload_tests.js" />
@@ -301,6 +304,9 @@
       <root url="file://$USER_HOME$/.meteor/packages/promise/0.10.2/web.browser/server.js" />
       <root url="file://$USER_HOME$/.meteor/packages/random/1.1.0/web.browser/random.js" />
       <root url="file://$USER_HOME$/.meteor/packages/random/1.1.0/web.browser/random_tests.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/reactive-dict/1.2.0/web.browser/migration.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/reactive-dict/1.2.0/web.browser/reactive-dict-tests.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/reactive-dict/1.2.0/web.browser/reactive-dict.js" />
       <root url="file://$USER_HOME$/.meteor/packages/reactive-var/1.0.11/web.browser/reactive-var.js" />
       <root url="file://$USER_HOME$/.meteor/packages/reload/1.2.0/web.browser/reload.js" />
       <root url="file://$USER_HOME$/.meteor/packages/reload/1.2.0/web.browser/reload_tests.js" />
