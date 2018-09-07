@@ -3,16 +3,18 @@ import { MyApp } from './app.component';
 import {BrowserModule} from "@angular/platform-browser";
 
 import {NgxDatatableModule} from "@swimlane/ngx-datatable";
+import {TodosListCtrl} from "../../../imports/components/todosList/todosList";
 
 @NgModule({
     declarations: [
-        MyApp
+        MyApp,
+        TodosListCtrl
     ],
     imports: [
         NgxDatatableModule,
         BrowserModule
     ],
     providers: [],
-    bootstrap: [MyApp]
+    bootstrap: [MyApp, TodosListCtrl]
 })
 export class AppModule {}
