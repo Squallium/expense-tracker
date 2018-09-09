@@ -1,5 +1,7 @@
 import {Component} from "@angular/core";
 
+import {Tasks} from "../../api/tasks";
+
 @Component({
     selector: 'todos-list',
     templateUrl: './todosList.html',
