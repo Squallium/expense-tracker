@@ -6,7 +6,7 @@ import {Component} from "@angular/core";
     styleUrls: ['./app.component.scss']
 })
 export class MyApp {
-    title = 'untitled';
+    title = 'Tour of Heroes';
 
     rows = [
         { name: 'Austin', gender: 'Male', company: 'Swimlane' },
