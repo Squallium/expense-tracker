@@ -7,13 +7,15 @@ import {NgxDatatableModule} from "@swimlane/ngx-datatable";
 import {TodosListCtrl} from "../../../imports/components/todosList/todosList";
 import {HeroesComponent} from "../../../imports/components/heroes/heroes.component";
 import {HeroDetailComponent} from "../../../imports/components/hero-detail/hero-detail.component";
+import {MessagesComponent} from "../../../imports/components/messages/messages.component";
 
 @NgModule({
     declarations: [
         MyApp,
         TodosListCtrl,
         HeroesComponent,
-        HeroDetailComponent
+        HeroDetailComponent,
+        MessagesComponent
     ],
     imports: [
         NgxDatatableModule,
