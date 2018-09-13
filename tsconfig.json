@@ -8,12 +8,12 @@
     "noEmitHelpers": false,
     "lib": [
       "dom",
-      "es2015"
+      "es6"
     ],
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
-    "target": "es5",
+    "target": "es6",
     "skipLibCheck": true,
     "stripInternal": true,
     "noImplicitAny": false,

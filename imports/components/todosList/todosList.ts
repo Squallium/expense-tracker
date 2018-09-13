@@ -1,6 +1,8 @@
 import {Component} from "@angular/core";
 
 import {Tasks} from "../../api/tasks";
+import {Posts} from "../../collections";
+import {Mongo} from "meteor/mongo";
 
 @Component({
     selector: 'todos-list',
@@ -9,15 +11,9 @@ import {Tasks} from "../../api/tasks";
 })
 export class TodosListCtrl {
 
-    tasks:Object[]
+    tasks:Object
 
     constructor() {
-        this.tasks = [{
-            text: 'This is task 1'
-        }, {
-            text: 'This is task 2'
-        }, {
-            text: 'This is task 3'
-        }];
+        this.tasks = Posts.find({}, {sort: {timeCreated: -1}});
     }
 }

@@ -22,6 +22,13 @@ export class HeroesComponent implements OnInit {
 
     onSelect(hero: Hero): void {
         this.selectedHero = hero;
+        // Meteor.call('jander', (error, result) => {
+        //     if (!error) {
+        //         console.log(result);
+        //     } else {
+        //         console.log(error);
+        //     }
+        // });
     }
 
     getHeroes(): void {
